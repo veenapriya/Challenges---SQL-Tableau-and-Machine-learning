@@ -1,8 +1,8 @@
 
 SQL-Challenge
 
--- Sling TV is an online live tv streaming service provider. It provide 3 basic subscriptions and also users can add more additional services like sports or news add on's. 
--- I was asked to create business metrics to answer few business questions. These business metrics are provided as below.
+#### 1. Sling TV is an online live tv streaming service provider. It provide 3 basic subscriptions and also users can add more additional services like sports or news add on's. 
+#### 2. I was asked to create business metrics to answer few business questions. These business metrics are provided as below.
 
 Write SQL queries to provide business recommendation based on data insights.
 
