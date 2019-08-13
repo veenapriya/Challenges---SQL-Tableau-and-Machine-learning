@@ -1,12 +1,9 @@
 
-SQL-Challenge
+### SQL-Challenge
 
 #### 1. Sling TV is an online live tv streaming service provider. It provide 3 basic subscriptions and also users can add more additional services like sports or news add on's. 
 #### 2. I was asked to create business metrics to answer few business questions. These business metrics are provided as below.
 
-Write SQL queries to provide business recommendation based on data insights.
-
-Questions For all questions please include SQL, graphs/charts, filters you would give the stakeholders in order to have their questions answered
 
 How can I tell if someone is viewing shows that they shouldn’t have access to?
 Research: I looked into Sling.tv on how user can subscribe to packages. There are base packages like Sling Orange, Sling Blue and Orange & Blue, and users can add more extras to their packages.
