@@ -5,7 +5,7 @@
 #### 2. I was asked to create business metrics to answer few business questions. These business metrics are provided as below.
 
 
-##### How can I tell if someone is viewing shows that they shouldn’t have access to?
+# How can I tell if someone is viewing shows that they shouldn’t have access to?
 Research: I looked into Sling.tv on how user can subscribe to packages. There are base packages like Sling Orange, Sling Blue and Orange & Blue, and users can add more extras to their packages.
 
 SELECT DISTINCT Users.id FROM Users LEFT JOIN Session ON Users.id = Session.users_id AND Users.entitlement = Session.entitlement WHERE Users.active = 'FALSE' AND Session.watched_time > 0 AND Users.updated_at < = session.date_pulled
@@ -23,7 +23,7 @@ Pie chart to display the proportion of users viewing the shows with and without 
 
 List displaying all the user Id’s who are watching the show without access
 
-##### How many customers viewed a show, I want to be able to filter by a schedule_guid?
+# How many customers viewed a show, I want to be able to filter by a schedule_guid?
 
 SELECT Viewership.schedule_guid, Viewership.title, COUNT(Session.users_id) AS 'Total Users Viewed' FROM Viewership LEFT JOIN Session ON Viewership.asset_id = Session.asset_id AND Viewership.date_pulled = Session.date_pulled AND Viewership.incoming_host = Session.incoming_host WHERE Session.watched_time > 0 GROUP BY Viewership.schedule_guid, Viewership.title
 
@@ -38,7 +38,7 @@ UX team - This information can be used to improve user experience by displaying 
 Marketing team— Helps to display Ads or promotional events.
 Graphs/Charts
 
-##### Provide filter with a list of schedule_guid. When a schedule guid is selected from the filter a line chart is displayed.
+# Provide filter with a list of schedule_guid. When a schedule guid is selected from the filter a line chart is displayed.
 
 Line chart is displayed with the shows and count of total number users who watched each show. This helps to see check any immediate peaks or trends in viewers.
 
@@ -62,7 +62,7 @@ Product & UX team – Helps planning new feature in the road map.
 Marketing & Sales team – Helps them to market these shows and entitlements to new and existing user, and improve user engagement times.
 Graphs/Charts
 
-##### Display the top 10 most viewed and most subscribed entitlements in bar plot.
+# Display the top 10 most viewed and most subscribed entitlements in bar plot.
 
 Any insight you think would be beneficial to me?
 
